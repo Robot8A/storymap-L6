@@ -190,7 +190,7 @@ $(window).on('load', function() {
         } else {
           markers.push(
             L.marker([lat, lon], {
-              icon: L.divIcon({
+              /*icon: L.divIcon({
                   html: `
                   <?xml version="1.0" encoding="utf-8"?>
                   <svg version="1.1" id="svg2" xmlns:svg="http://www.w3.org/2000/svg"
@@ -219,16 +219,16 @@ $(window).on('load', function() {
                   `),
                   className: "",
                   iconSize: [83.33, 62.25]
-                }),
-              /*icon: L.icon({
+                }),*/
+              icon: L.icon({
                 iconUrl: 'MetroMadridLogo.svg',
             
-                iconSize:     [35,21], // size of the icon
+                iconSize:     [40, 24], // size of the icon
                 //shadowSize:   [50, 64], // size of the shadow
                 //iconAnchor:   [22, 94], // point of the icon which will correspond to marker's location
                 //shadowAnchor: [4, 62],  // the same for the shadow
                 //popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
-              }),*/
+              }),
               opacity: 0.99,
               interactive: true,
             })
